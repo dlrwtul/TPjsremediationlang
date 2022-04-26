@@ -1,0 +1,92 @@
+var days = Math.floor(diff/86400000);
+var hours = Math.floor((diff%86400000)/3600000);
+var minuts = Math.floor(((diff%86400000)%3600000)/60000);
+var seconds = Math.floor((((diff%86400000)%3600000)%60000)/1000);
+
+/* function down_minutes() {
+    minutes.parentElement.classList.add("down");
+    if (minuts < 10) {
+        minutes.innerHTML = `0${minuts--}`;
+        if (minuts < 0) {
+            minuts = 59;
+        }
+    } else {
+        if (minuts === 59) {
+            down_hours();
+        }
+        minutes.innerHTML = minuts--;
+    }
+    setTimeout(() => {
+        minutes.parentElement.classList.remove("down");
+    }, 900);
+}
+
+function down_hours() {
+    heures.parentElement.classList.add("down");
+    if (hours < 10) {
+        heures.innerHTML = `0${hours--}`;
+        if (hours < 0) {
+            hours = 23;
+        }
+    } else {
+        if (hours === 23) {
+            down_days();
+        }
+        heures.innerHTML = hours--;
+    }
+    setTimeout(() => {
+        heures.parentElement.classList.remove("down");
+    }, 900);
+}
+
+function down_days() {
+    jours.parentElement.classList.add("down");
+    if (days < 10) {
+        jours.innerHTML = `00${days--}`;
+        if (days < 0) {
+            days = 'good'
+        }
+    }else if (days < 100) {
+        jours.innerHTML = `0${days--}`;
+    }
+     else {
+        jours.innerHTML = days--;
+    }
+    setTimeout(() => {
+        jours.parentElement.classList.remove("down");
+    }, 900);
+}
+
+function countdown() {
+    down_days();
+    down_hours();
+    down_minutes();
+    setInterval(() => {
+        secondes.parentElement.classList.add("down");
+        if (seconds < 10) {
+            secondes.innerHTML = `0${seconds--}`;
+            if (seconds < 0) {
+                seconds = 59;
+            }
+        } else {
+            if (seconds === 59) {
+                down_minutes();
+            }
+            secondes.innerHTML = seconds--;
+        }
+        setTimeout(() => {
+            secondes.parentElement.classList.remove("down");
+        }, 900);
+    }, 1000);    
+}
+
+countdown();
+ */
+
+/* var timer = moment.duration(diff, 'milliseconds')
+var a = moment(today);
+var b = moment(newYear);
+console.log(a.diff(b,'days'))
+console.log(timer._data.hours)
+console.log(timer._data.minutes)
+console.log(timer._data.seconds) */

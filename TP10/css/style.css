@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.container {
+    border-top: 10px solid #275595;
+    height: auto;
+    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.search {
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search span:first-child input {
+    outline: none;
+    font-size: 1.15em;
+    padding: 1em 0.5em;
+    width: 15em;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search span:last-child i {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.first {
+    width: 100%;
+    height: 35vh;
+    background-color: #f0e2fd;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+.first div:first-child {
+    height: 30%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.first div:last-child {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.first div:last-child span {
+}
+
+.first div:last-child img {
+    border: 1.5px solid white;
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+}
+
+.first div:last-child h3 {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.second {
+    background-color: white;
+    min-height: 55vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0;
+}
+
+.recette {
+    width: 80vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pic {
+    height: 85%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+.footer span:first-child {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.footer span:last-child i {
+    color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: color 0.35s ease;
+}
+
+.footer span:last-child i:hover {
+    color: red;
+    animation: move 0.35s;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+
+}
+
+.generer {
+    font-size: 1.5em;
+    position: relative;
+    top: 10%;
+    padding: 0.35em 2em;
+    text-align: center;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+/* #barresearch {
+    position: absolute;
+    top: 125px;
+    left: 20px;
+    border: none;
+    font-size: 1.15em;
+    padding: 0.15em 0.5em;
+    border-radius: 5px;
+    background-color: #f0e2fd;
+    color: #275595;
+    cursor: pointer;
+} */
+
+.modal {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100Vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.info {
+    width: 30%;
+    height: 45em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 0 1%;
+}
+
+.infoheader {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.35em;
+    font-weight: bold;
+}
+
+.infoheader i {
+    cursor: pointer;
+}
+
+.infobody {
+    height: 55%;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.infofooter {
+    padding: 2%;
+    height: 35%;
+    overflow-y: scroll;
+}
+
+.infofooter ul h2 {
+    margin-left: -40px;
+}
+
+.recette {
+    margin: 2% 0;
+}
